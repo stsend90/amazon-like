@@ -62,7 +62,7 @@ function start() {
         });
 }
 function viewProducts() {
-    connection.query("SELECT * FROM products WHERE stock_quantity > 0 ", function (
+    connection.query("SELECT * FROM products WHERE stock_quantity >= 0 ", function (
         err,
         res
     ) {
