@@ -82,4 +82,4 @@ Created during UCF's Full stack Bootcamp 2019. The goal was to create an Amazon-
 
 ## Authors
 
-**Jay Saran** - *JS/MySQL/Node.js* - [Jay Saran](https://github.com/stsend90)
+**Tsendpurev Saran** - *JS/MySQL/Node.js* - [Tsendpurev Saran](https://github.com/stsend90)
