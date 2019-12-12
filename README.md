@@ -39,12 +39,31 @@ Created during UCF's Full stack Bootcamp 2019. The goal was to create an Amazon-
     * If the manager selects `Exit`, it ends the session and doesn't go back to the menu.
 
 -----------------------
-    
+## Results
+-  ![AmazonCustomer/Challange1](images/challange1.png)
+
+-----------------------
+
+-  ![AmazonCustomer/Challange2p1](images/challange2p1.png)
+
+-----------------------
+
+-  ![AmazonCustomer/Challange2p2](images/challange2p2.png)
+
+-----------------------
+
+## Working progress
+-  ![AmazonCustomer/Challange1](images/challange3.png)
+
+-----------------------
+
 ## Technologies used
 - Node.js
 - Inquire NPM Package (https://www.npmjs.com/package/inquirer)
 - MYSQL NPM Package (https://www.npmjs.com/package/mysql)
 - Console.table NPM Package
+
+-----------------------
 
 ### Prerequisites
 
@@ -58,6 +77,8 @@ Created during UCF's Full stack Bootcamp 2019. The goal was to create an Amazon-
 * Visual Studio Code - Text Editor
 * MySQL/MySQLWorkbench
 * Terminal/Gitbash
+
+-----------------------
 
 ## Authors
 

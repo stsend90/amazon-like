@@ -72,7 +72,7 @@ function viewProducts() {
     });
 }
 function lowInventory() {
-    connection.query("SELECT * FROM products WHERE stock_quantity < 5 ", function (err,res) {
+    connection.query("SELECT * FROM products WHERE stock_quantity <= 5 ", function (err,res) {
         if (err) throw err;
         console.table(res);
         inquirer
@@ -81,18 +81,18 @@ function lowInventory() {
                     name: "choice",
                     type: "list",
                     message: "What would you like to do?",
-                    choices: ["Add Inventory", "Back to main menu", "Exit"]
+                    choices: ["Back to main menu", "Exit"]
                 }
             ])
             .then(function (answer) {
                 switch (answer.choice) {
-                    case "Add Inventory":
-                        addInventory();
-                        break;
                     case "Back to main menu":
                         start();
                         break;
                     case "Exit":
+                        console.log("\n==============================\n");
+                        console.log("Good work, thank you!")
+                        console.log("\n==============================\n");
                         connection.end();
                         break;
                     default:
@@ -139,7 +139,7 @@ function addInventory() {
                     if (res[i].product_name === answer.choice) {
                         chosenItem = res[i];
                         console.log(chosenItem);
-                    };
+                    }; 
                 };
                 let amount = parseInt(answer.amount) + parseInt(chosenItem.stock_quantity);
                 connection.query("UPDATE products SET ? WHERE ?",

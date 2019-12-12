@@ -30,7 +30,7 @@ function runProducts() {
 
 function customerItem(inventory) {
   inquirer.prompt([{
-        type: "input",
+        type: "Input",
         name: "choice",
         message: "What is the ID of the item you would you like to purchase? [Exit with Q]",
         validate: function (answer) {
