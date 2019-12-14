@@ -28,3 +28,18 @@ VALUES  ("Uncharted 4", "Video Games", 49.95, 150),
         ("Monopoly", "Board Games", 30.50, 35),
         ("Yahtzee", "Board Games", 19.95, 23);
 
+CREATE TABLE departments (
+  department_id INT AUTO_INCREMENT NOT NULL,
+  department_name VARCHAR(50)NOT NULL,
+  over_head_cost DECIMAL(10,2)NOT NUll,
+  primary key (department_id)
+);
+
+SELECT * FROM departments;
+
+INSERT INTO departments (department_name, over_head_cost)
+VALUES  ("Video Games", 150),
+        ("Apparel", 70),
+        ("Board Games", 10),
+        ("BluRay films", 200),
+        ("Food and beverage", 60)

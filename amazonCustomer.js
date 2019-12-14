@@ -16,11 +16,11 @@ connection.connect(function (err) {
   console.log("\n==============================\n")
   console.log("\nConnected as id: " + connection.threadId + "\n");
   console.log("\n==============================\n")
-  runProducts();     
+  startProducts();     
 
 });
 
-function runProducts() {
+function startProducts() {
   connection.query("SELECT * FROM products", function (err, answer) {
     if (err) throw err;
     console.table(answer);
@@ -50,7 +50,7 @@ function customerItem(inventory) {
         console.log("\n==============================\n")
         console.log("\nThat item is not in the inventory.");
         console.log("\n==============================\n")
-        runProducts();
+        startProducts();
       }
     });
 };
@@ -72,7 +72,7 @@ function customerQuantity(product) {
         console.log("\n==============================\n")
         console.log("\nInsufficient quantity!\n");
         console.log("\n==============================\n")
-        runProducts();
+        startProducts();
       }
       else {
         makePurchase(product, quantity);
@@ -88,7 +88,7 @@ function makePurchase(product, quantity) {
       console.log("\n==============================\n")
       console.log(`\nSuccessfully purchased ${quantity} ${product.product_name} your total: $${parseInt(quantity) * parseInt(product.price)}\n`);
       console.log("\n==============================\n")
-      runProducts();
+      startProducts();
     }
   );
 };
