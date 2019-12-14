@@ -53,7 +53,7 @@ Created during UCF's Full stack Bootcamp 2019. The goal was to create an Amazon-
 -----------------------
 
 ## Working progress
--  ![AmazonCustomer/Challange1](images/challange3.png)
+-  ![AmazonCustomer/Challange3](images/challange3.png)
 
 -----------------------
 
