@@ -1,14 +1,14 @@
 {
   "name": "amazon-like",
   "version": "1.0.0",
-  "description": "",
+  "description": "Created during UCF's Full stack Bootcamp 2019. The goal was to create an Amazon-like store front using Node.js and a MySQL database.",
   "main": "amazon.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stsend90/amazon-like"
+    "url": "git+https://github.com/stsend90/amazon-like.git"
   },
   "keywords": [],
   "author": "",
