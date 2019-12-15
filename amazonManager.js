@@ -20,8 +20,8 @@ function start() {
     inquirer
         .prompt([
             {
-                name: "choice",
                 type: "list",
+                name: "choice",
                 message: "What would you like to do?",
                 choices: [
                     "View Products for Sale",
@@ -78,8 +78,8 @@ function lowInventory() {
         inquirer
             .prompt([
                 {
-                    name: "choice",
                     type: "list",
+                    name: "choice",
                     message: "What would you like to do?",
                     choices: ["Back to main menu", "Exit"]
                 }
@@ -114,8 +114,8 @@ function addInventory() {
             resArr.push(res[i].product_name);
         };
         inquirer.prompt([{
+                    type: "rawlist",  
                     name: "choice",
-                    type: "rawlist",
                     choices: resArr,
                     message: "Which item would you like to add inventory to?"
                 },{
